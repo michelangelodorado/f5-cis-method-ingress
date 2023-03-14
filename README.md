@@ -2,6 +2,15 @@
 
 This is the steps on how to deploy F5 CIS via Ingress method
 
+Mandatory requirements for deploying CIS:
+
+- Kubernetes Cluster must be up and running.
+- AS3: 3.18+ must be installed on your BIG-IP system.
+- Create a BIG-IP partition to manage Kubernetes objects. This partition can be created either via the GUI (System > Users > Partition List) or via our TMOS CLI:
+
+create auth partition <cis_managed_partition>
+-You need a user with administrative access to this partition.
+
 Clone the repository:
 
 ```
