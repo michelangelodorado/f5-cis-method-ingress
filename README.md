@@ -2,6 +2,13 @@
 
 This is the steps on how to deploy F5 CIS via Ingress method
 
+Clone the repository:
+
+```
+git clone 
+cd 
+```
+
 ## Deploy and Expose your app in the Kubernetes cluster
 
 You can deploy your own app or you can use the service/deployment yaml files below for testing
