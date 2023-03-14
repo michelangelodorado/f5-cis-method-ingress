@@ -2,7 +2,7 @@
 
 This is the steps on how to deploy F5 CIS via Ingress method
 
-# Deploy and Expose your Application in the Kubernetes cluster
+## Deploy and Expose your app in the Kubernetes cluster
 
 ...
 
