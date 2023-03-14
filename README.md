@@ -5,8 +5,8 @@ This is the steps on how to deploy F5 CIS via Ingress method
 Clone the repository:
 
 ```
-git clone 
-cd 
+git clone https://github.com/michelangelodorado/f5-cis-method-ingress.git
+cd f5-cis-method-ingress
 ```
 
 ## Deploy and Expose your app in the Kubernetes cluster
@@ -16,11 +16,10 @@ You can deploy your own app or you can use the service/deployment yaml files bel
 ```bash
 kubectl apply -f appresources/
 ```
-...
 
-## INSTALL CIS MANUALLY
+## Install F5 CIS
 
-...
-
+```bash
 kubectl create secret generic f5-bigip-ctlr-login -n kube-system --from-literal=username=admin --from-literal=password=<password>
 kubectl create serviceaccount bigip-ctlr -n kube-system
+```
