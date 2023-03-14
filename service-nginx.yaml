@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: nginx
+    cis.f5.com/as3-app: A1
+    cis.f5.com/as3-pool: web_pool
+    cis.f5.com/as3-tenant: AS3
+  name: nginx-web-service
+  namespace: default
+  resourceVersion: "4454"
+  uid: 39d281d4-042a-4794-a946-f2792df0d3cc
+spec:
+  clusterIP: 10.102.98.171
+  clusterIPs:
+  - 10.102.98.171
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: nginx
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
