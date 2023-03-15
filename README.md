@@ -30,3 +30,5 @@ kubectl create secret generic f5-bigip-ctlr-login -n kube-system --from-literal=
 ```bash
 kubectl create serviceaccount bigip-ctlr -n kube-system
 ```
+### Apply the yaml files to create Cluster Role, Cluster Role Binding, CIS deployment, 
+
