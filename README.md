@@ -6,7 +6,8 @@ This is updated version for this link: https://clouddocs.f5.com/containers/lates
 Mandatory requirements for deploying CIS:
 
 - Kubernetes Cluster must be up and running.
-- AS3: 3.18+ must be installed on your BIG-IP system https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/userguide/installation.html
+- AS3: 3.18+ must be installed on your BIG-IP system
+https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/userguide/installation.html
 - Create a BIG-IP partition to manage Kubernetes objects. This partition can be created either via the GUI (System > Users > Partition List) or via our TMOS CLI: (tmsh create auth partition <cis_managed_partition>)
 - You need a user with administrative access to this partition.
 
