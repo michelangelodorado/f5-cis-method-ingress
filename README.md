@@ -22,11 +22,11 @@ kubectl apply -f appresources/
 
 ## Install F5 CIS
 
-###Add BIG-IP credentials as K8S secrets
+### Add BIG-IP credentials as K8S secrets
 ```bash
 kubectl create secret generic f5-bigip-ctlr-login -n kube-system --from-literal=username=admin --from-literal=password=<password>
 ```
-###Create a service account for deploying CIS. In the example below, the Service Account is named bigip-ctlr
+### Create a service account for deploying CIS. In the example below, the Service Account is named bigip-ctlr
 ```bash
 kubectl create serviceaccount bigip-ctlr -n kube-system
 ```
