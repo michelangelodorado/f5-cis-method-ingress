@@ -1,6 +1,6 @@
 # f5-cis-method-ingress
 
-This is the steps on how to deploy F5 CIS via Ingress method
+This repo contains the steps and yaml files to deploy F5 CIS via Ingress method
 
 Mandatory requirements for deploying CIS:
 
